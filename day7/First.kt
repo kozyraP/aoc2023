@@ -35,7 +35,7 @@ fun sort(arr: ArrayList<String>) {
 }
 
 fun checkValueIfDraw(card1: String, card2: String): Int {
-    var figures = listOf('2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A')
+    val figures = listOf('2', '3', '4', '5', '6', '7', '8', '9', 'T', 'J', 'Q', 'K', 'A')
     for (i in card1.indices) {
         if (card1[i] != card2[i]) {
             if (figures.indexOf(card1[i]) > figures.indexOf(card2[i])) {
